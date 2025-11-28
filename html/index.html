@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen | Java Full Stack Developer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .project-card {
+            background: white;
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #2c3e50;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a252f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Naveen</h1>
+        <p>Java Full Stack Developer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Naveen, a passionate Java Full Stack Developer focused on building
+           backend systems and efficient web applications.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Hibernate</span>
+            <span>MySQL</span>
+            <span>React</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A simple personal portfolio website built using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Java Backend API</h3>
+            <p>A RESTful API built using Spring Boot and MySQL database.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Classifieds UI</h3>
+            <p>React + Vite classifieds website UI with search and filter features.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: naveen@example.com</p>
+        <button onclick="alert('Thank you Naveen! I will contact you soon ❤️')">Say Hello</button>
+    </section>
+
+    <footer>
+        © 2025 Naveen | All Rights Reserved
+    </footer>
+
+    <script>
+        // Smooth scroll effect
+        document.querySelectorAll("nav a").forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute("href"));
+                section.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    </script>
+
+</body>
+</html>
